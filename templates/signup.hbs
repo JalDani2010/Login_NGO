@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+
+    <div class="signup-container">
+        <h1>NGO Sign Up</h1>
+
+        <form action="/signup" method="post">
+            <input placeholder="Name of the NGO" name="name" type="text" required>
+            <br>
+            <input placeholder="Contact Person" name="contactPerson" type="text" required>
+            <br>
+            <input placeholder="Mobile Number" name="mobileNumber" type="text" required pattern="[0-9]{10}" title="Enter a valid 10-digit mobile number">
+            <br>
+            <input placeholder="Email" name="email" type="email" required>
+            <br>
+            <input placeholder="Password" name="password" type="password" required minlength="6">
+            <br>
+            <input placeholder="Address" name="address" type="text" required>
+
+            <div class="checkbox-container">
+                <label>
+                    <input type="checkbox" name="updated12A"> Updated 12A
+                </label>
+                <label>
+                    <input type="checkbox" name="updated80G"> Updated 80G
+                </label>
+            </div>
+
+            <input class="sub" type="submit" value="Sign Up">
+        </form>
+
+        <div class="back-link">
+            <a href="/">Go back to login page</a>
+        </div>
+    </div>
+
+</body>
+</html>
